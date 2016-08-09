@@ -9,4 +9,5 @@
 	<version>1.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<dependencies/>
 </project>
