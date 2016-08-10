@@ -6,8 +6,28 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>joanroch</groupId>
 	<artifactId>rm164</artifactId>
-	<version>1.0.1-SNAPSHOT</version>
+	<version>1.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<dependencies/>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-external-version-plugin</artifactId>
+				<version>0.1.1-SNAPSHOT</version>
+				<extensions>true</extensions>
+				<configuration>
+					<strategy hint="file">
+						<versionFilePath>VERSION</versionFilePath>
+                                        </strategy>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<modules>
+		<module>module</module>
+	</modules>
 </project>
